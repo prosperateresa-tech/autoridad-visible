@@ -700,17 +700,17 @@ return ‘<div class="auth-wrap">’
 }
 
 function mostrarLogin() {
-document.getElementById(“form-login”).style.display    = “block”;
-document.getElementById(“form-registro”).style.display = “none”;
-document.getElementById(“tab-e”).classList.add(“activo”);
-document.getElementById(“tab-r”).classList.remove(“activo”);
+document.getElementById("form-login").style.display    = "block";
+document.getElementById("form-registro").style.display = "none";
+document.getElementById("tab-e").classList.add("activo");
+document.getElementById("tab-r").classList.remove("activo");
 }
 
 function mostrarRegistro() {
-document.getElementById(“form-login”).style.display    = “none”;
-document.getElementById(“form-registro”).style.display = “block”;
-document.getElementById(“tab-e”).classList.remove(“activo”);
-document.getElementById(“tab-r”).classList.add(“activo”);
+document.getElementById("form-login").style.display    = "none";
+document.getElementById("form-registro").style.display = "block";
+document.getElementById("tab-e").classList.remove("activo");
+document.getElementById("tab-r").classList.add("activo");
 }
 
 // Exponer al scope global
@@ -734,7 +734,7 @@ setTimeout(function() {
 var carga = document.getElementById("pantalla-carga");
 if (carga && carga.style.display !== "none") {
 carga.style.display = "none";
-document.getElementById(“app”).innerHTML = ‘<div style="padding:40px;text-align:center;color:#c47a20;font-family:Cinzel,serif;font-size:13px;letter-spacing:1px;">Firebase no responde.<br>Verifica tu conexi\u00F3n a internet.<br><br><button onclick="location.reload()" style="background:none;border:1px solid #c47a20;color:#c47a20;padding:10px 20px;border-radius:8px;cursor:pointer;font-family:Cinzel,serif;font-size:11px;">Reintentar</button></div>’;
+document.getElementById("app").innerHTML = ‘<div style="padding:40px;text-align:center;color:#c47a20;font-family:Cinzel,serif;font-size:13px;letter-spacing:1px;">Firebase no responde.<br>Verifica tu conexi\u00F3n a internet.<br><br><button onclick="location.reload()" style="background:none;border:1px solid #c47a20;color:#c47a20;padding:10px 20px;border-radius:8px;cursor:pointer;font-family:Cinzel,serif;font-size:11px;">Reintentar</button></div>’;
 }
 }, 8000);
 
@@ -747,7 +747,7 @@ try {
 await cargarPerfil(user.uid);
 mostrarCarga(false);
 if (user.email === ADMIN_EMAIL) {
-document.getElementById(“app”).innerHTML = htmlAdmin();
+document.getElementById("app").innerHTML = htmlAdmin();
 cargarAdmin();
 } else {
 document.getElementById("app").innerHTML = htmlClienta();
