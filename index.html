@@ -725,20 +725,6 @@ window.cambiarTab     = cambiarTab;
 window.mostrarLogin   = mostrarLogin;
 window.mostrarRegistro = mostrarRegistro;
 
-function mostrarLogin() {
-  document.getElementById("form-login").style.display    = "block";
-  document.getElementById("form-registro").style.display = "none";
-  document.getElementById("tab-e").classList.add("activo");
-  document.getElementById("tab-r").classList.remove("activo");
-}
-
-function mostrarRegistro() {
-  document.getElementById("form-login").style.display    = "none";
-  document.getElementById("form-registro").style.display = "block";
-  document.getElementById("tab-e").classList.remove("activo");
-  document.getElementById("tab-r").classList.add("activo");
-}
-
 
 // ——————————————
 // INIT
