@@ -731,9 +731,9 @@ window.mostrarRegistro = mostrarRegistro;
 // ——————————————
 // Timeout para detectar si Firebase no responde
 setTimeout(function() {
-var carga = document.getElementById(“pantalla-carga”);
-if (carga && carga.style.display !== “none”) {
-carga.style.display = “none”;
+var carga = document.getElementById("pantalla-carga");
+if (carga && carga.style.display !== "none") {
+carga.style.display = "none";
 document.getElementById(“app”).innerHTML = ‘<div style="padding:40px;text-align:center;color:#c47a20;font-family:Cinzel,serif;font-size:13px;letter-spacing:1px;">Firebase no responde.<br>Verifica tu conexi\u00F3n a internet.<br><br><button onclick="location.reload()" style="background:none;border:1px solid #c47a20;color:#c47a20;padding:10px 20px;border-radius:8px;cursor:pointer;font-family:Cinzel,serif;font-size:11px;">Reintentar</button></div>’;
 }
 }, 8000);
@@ -750,18 +750,18 @@ if (user.email === ADMIN_EMAIL) {
 document.getElementById(“app”).innerHTML = htmlAdmin();
 cargarAdmin();
 } else {
-document.getElementById(“app”).innerHTML = htmlClienta();
+document.getElementById("app").innerHTML = htmlClienta();
 document.getElementById(“modal”).addEventListener(“click”, function(e){ if (e.target === this) cerrarModal(); });
 renderClienta();
 }
 } catch(err) {
 mostrarCarga(false);
-document.getElementById(“app”).innerHTML = ’<div style="padding:40px;text-align:center;color:#c47a20;font-family:Cinzel,serif;font-size:13px;letter-spacing:1px;">Error: ’ + err.message + ‘<br><br><button onclick="cerrarSesion()" style="background:none;border:1px solid #c47a20;color:#c47a20;padding:10px 20px;border-radius:8px;cursor:pointer;font-family:Cinzel,serif;font-size:11px;">Volver</button></div>’;
+document.getElementById("app").innerHTML = ’<div style="padding:40px;text-align:center;color:#c47a20;font-family:Cinzel,serif;font-size:13px;letter-spacing:1px;">Error: ’ + err.message + ‘<br><br><button onclick="cerrarSesion()" style="background:none;border:1px solid #c47a20;color:#c47a20;padding:10px 20px;border-radius:8px;cursor:pointer;font-family:Cinzel,serif;font-size:11px;">Volver</button></div>’;
 }
 } else {
 usuario = null;
 perfil  = null;
-document.getElementById(“app”).innerHTML = htmlAuth();
+document.getElementById("app").innerHTML = htmlAuth();
 }
 });
 </script>
