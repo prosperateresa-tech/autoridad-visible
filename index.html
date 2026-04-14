@@ -661,41 +661,41 @@ function htmlClienta() {
 }
 
 function htmlAdmin() {
-return ‘<div class="wrap">'
-+ ‘<div class="header"><div class="logo-sub-marca">Imagen y Trascendencia</div><div class="logo-titulo">Panel de Admin</div><div class="logo-sub">Vista de Administraci\u00F3n</div></div>'
-+ ‘<div style="display:flex;justify-content:space-between;align-items:center;margin:18px 0 10px">'
-+ ‘<div class="sec-titulo" style="margin:0">Clientas activas</div>'
-+ ‘<button class="btn-link" onclick="cerrarSesion()">Salir</button>'
-+ ‘</div>'
-+ ‘<div id="admin-lista"><div style="text-align:center;padding:40px 0;color:var(--suave);">Cargando…</div></div>'
-+ ‘</div>';
+return '<div class="wrap">'
++ '<div class="header"><div class="logo-sub-marca">Imagen y Trascendencia</div><div class="logo-titulo">Panel de Admin</div><div class="logo-sub">Vista de Administraci\u00F3n</div></div>'
++ '<div style="display:flex;justify-content:space-between;align-items:center;margin:18px 0 10px">'
++ '<div class="sec-titulo" style="margin:0">Clientas activas</div>'
++ '<button class="btn-link" onclick="cerrarSesion()">Salir</button>'
++ '</div>'
++ '<div id="admin-lista"><div style="text-align:center;padding:40px 0;color:var(--suave);">Cargando…</div></div>'
++ '</div>';
 }
 
 function htmlAuth() {
-return ‘<div class="auth-wrap">'
-+ ‘<div class="auth-box">'
-+ ‘<div class="logo-sub-marca" style="text-align:center;margin-bottom:5px">Imagen y Trascendencia</div>'
-+ ‘<div class="logo-titulo" style="text-align:center">Autoridad Visible\u2122</div>'
-+ ‘<div class="logo-sub" style="text-align:center;margin-bottom:26px">El Sistema . Tu Juego</div>'
-+ ‘<div class="auth-tabs">'
-+ ‘<button class="auth-tab activo" id="tab-e" onclick="mostrarLogin()">Entrar</button>'
-+ ‘<button class="auth-tab" id="tab-r" onclick="mostrarRegistro()">Registro</button>'
-+ ‘</div>'
-+ ‘<div id="form-login">'
-+ ‘<input class="auth-input" id="lEmail" type="email" placeholder="Tu email">'
-+ ‘<input class="auth-input" id="lPass" type="password" placeholder="Contrase\u00F1a">'
-+ ‘<div class="error-msg" id="errorMsg"></div>'
-+ ‘<button class="btn-p" onclick="entrar()">Entrar al sistema</button>'
-+ ‘</div>'
-+ ‘<div id="form-registro" style="display:none">'
-+ ‘<input class="auth-input" id="rNombre" type="text" placeholder="Tu nombre">'
-+ ‘<input class="auth-input" id="rEmail" type="email" placeholder="Tu email">'
-+ ‘<input class="auth-input" id="rPass" type="password" placeholder="Contrase\u00F1a (m\u00EDn. 6 caracteres)">'
-+ ‘<div class="error-msg" id="errorMsg"></div>'
-+ ‘<button class="btn-p" onclick="registrar()">Crear mi perfil</button>'
-+ ‘</div>'
-+ ‘<div style="font-family:Cormorant Garamond,serif;font-style:italic;font-size:13px;color:var(--suave);text-align:center;margin-top:18px;line-height:1.6">Tu autoridad no se pide.<br>Se construye, se muestra, se cobra.</div>'
-+ ‘</div></div>';
+return '<div class="auth-wrap">'
++ '<div class="auth-box">'
++ '<div class="logo-sub-marca" style="text-align:center;margin-bottom:5px">Imagen y Trascendencia</div>'
++ '<div class="logo-titulo" style="text-align:center">Autoridad Visible\u2122</div>'
++ '<div class="logo-sub" style="text-align:center;margin-bottom:26px">El Sistema . Tu Juego</div>'
++ '<div class="auth-tabs">'
++ '<button class="auth-tab activo" id="tab-e" onclick="mostrarLogin()">Entrar</button>'
++ '<button class="auth-tab" id="tab-r" onclick="mostrarRegistro()">Registro</button>'
++ '</div>'
++ '<div id="form-login">'
++ '<input class="auth-input" id="lEmail" type="email" placeholder="Tu email">'
++ '<input class="auth-input" id="lPass" type="password" placeholder="Contrase\u00F1a">'
++ '<div class="error-msg" id="errorMsg"></div>'
++ '<button class="btn-p" onclick="entrar()">Entrar al sistema</button>'
++ '</div>'
++ '<div id="form-registro" style="display:none">'
++ '<input class="auth-input" id="rNombre" type="text" placeholder="Tu nombre">'
++ '<input class="auth-input" id="rEmail" type="email" placeholder="Tu email">'
++ '<input class="auth-input" id="rPass" type="password" placeholder="Contrase\u00F1a (m\u00EDn. 6 caracteres)">'
++ '<div class="error-msg" id="errorMsg"></div>'
++ '<button class="btn-p" onclick="registrar()">Crear mi perfil</button>'
++ '</div>'
++ '<div style="font-family:Cormorant Garamond,serif;font-style:italic;font-size:13px;color:var(--suave);text-align:center;margin-top:18px;line-height:1.6">Tu autoridad no se pide.<br>Se construye, se muestra, se cobra.</div>'
++ '</div></div>';
 }
 
 function mostrarLogin() {
