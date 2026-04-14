@@ -751,7 +751,7 @@ document.getElementById("app").innerHTML = htmlAdmin();
 cargarAdmin();
 } else {
 document.getElementById("app").innerHTML = htmlClienta();
-document.getElementById("modal”).addEventListener("click”, function(e){ if (e.target === this) cerrarModal(); });
+document.getElementById("modal").addEventListener("click", function(e){ if (e.target === this) cerrarModal(); });
 renderClienta();
 }
 } catch(err) {
